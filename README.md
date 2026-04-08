@@ -85,19 +85,16 @@ python agent.py
 
 ## 各 Tool 說明
 
-### `tool_name`（負責：姓名）
-
-- **功能**：
-- **使用 API**：
-- **參數**：
-- **回傳範例**：
-
+### `get_weather`（負責：吳宸宇）
+- **功能**：查詢世界各地指定城市的即時天氣觀測結果與氣溫。
+- **使用 API**：`https://wttr.in/{city}?format=j1`
+- **參數**：`city` (字串 str) — 欲查詢的城市英文名稱（例如："Taipei", "Tokyo"）
+- **回傳範例**：`"Taipei 目前天氣：Partly cloudy，氣溫 25°C"` 或 `"無法取得 Taipei 的天氣資訊: [錯誤原因]"`
 ```python
 @mcp.tool()
-def tool_name(param: str) -> str:
-    """Tool 的 docstring（這就是 AI 看到的描述）"""
-    ...
-```
+def get_weather(city: str) -> str:
+    """查詢目的地天氣"""
+    return get_weather_data(city)
 
 ### `tool_name`（負責：姓名）
 
