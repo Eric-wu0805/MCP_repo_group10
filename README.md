@@ -83,6 +83,7 @@ python agent.py
 ### MCP Inspector 截圖
 
 > 貼上 Inspector 的截圖（Tools / Resources / Prompts 三個分頁都要有）
+<img width="1918" height="902" alt="image" src="https://github.com/user-attachments/assets/20d80395-6baf-40c5-bc89-9e57015e5722" />
 
 ### Agent 對話截圖
 
