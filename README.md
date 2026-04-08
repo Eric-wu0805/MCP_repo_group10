@@ -125,6 +125,33 @@ def get_fun_fact() -> str:
     return get_fun_fact_data()
 ```
 
+### `get_activity`（負責：林富閎）
+-**功能**：隨機推薦旅遊活動（若指定城市則推薦該城市相關活動）。
+-**使用 API**：內部旅遊活動清單（可擴充至專屬推薦系統）。
+-**參數**：city (string, 選填)
+-**回傳範例**："在 台北 的推薦活動：\n- 參觀當地的歷史博物館...\n- 品嚐著名的在地美食..."
+
+```python
+@mcp.tool()
+def get_activity(city: str = None) -> str:
+    """推薦目的地的旅遊活動"""
+    return get_activity_data(city)
+```
+
+### `web_search`（負責：林富閎）
+-**功能**：透過網路搜尋獲取最新的景點、美食或旅遊相關資訊。
+-**使用 API**：duckduckgo-search (DuckDuckGo 搜尋引擎)
+-**參數**：query (string, 必填)
+-**回傳範例**："關於 '台北 必吃美食' 的搜尋結果：\n1. 台北在地人推薦清單...\n   這家牛肉麵位於..."
+
+```python
+@mcp.tool()
+def web_search(query: str) -> str:
+    """搜尋景點、美食或旅遊相關資訊"""
+    return web_search_data(query)
+
+```
+
 ### `get_advice`（負責：張承新）
 - **功能**：取得隨機的勵志語錄或人生建議。
 - **使用 API**：`https://api.adviceslip.com/advice`
