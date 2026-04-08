@@ -5,9 +5,7 @@
 
 ---
 
-## Server 功能總覽
 
-> 說明這個 MCP Server 提供哪些 Tool
 
 ## Server 功能總覽
 
