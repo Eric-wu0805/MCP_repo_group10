@@ -130,8 +130,11 @@ def get_advice() -> str:
 
 ### 遇到最難的問題
 
-> 寫下這次實作遇到最困難的事，以及怎麼解決的
+最困難的地方在於實作 `agent.py` 時，遇到了「非同步事件迴圈阻塞」與 TaskGroup 崩潰的問題，以及處理 MCP Inspector 連線方式的衝突。當時因為使用了同步的 `input()` 或一般版的 Gemini `chat.send_message()`，導致卡死了非同步的 MCP SSE 連線，頻繁發生 `ExceptionGroup` 報錯。
+**解決方式**：我們將讀取輸入的指令改為 `await asyncio.to_thread(input)`，並且升級使用非同步版本的 `client.aio.chats.create` 來避免主執行緒卡死，再加上實作解析 ExceptionGroup 錯誤樹的機制，成功抓出深層的 API Key 容量上限等 API 問題。另外在 Inspector 方面，也學會了正確將網頁端的 Transport 設定切換成 SSE 並搭配 Localhost 埠號，順利排除了開發上的阻礙。
 
 ### MCP 跟上週的 Tool Calling 有什麼不同？
 
-> 用自己的話說說，做完後你覺得 MCP 的好處是什麼
+上週學的傳統 Tool Calling 是將「工具邏輯」與「AI Agent」的程式碼高度綁定（Coupled），這代表我們若換一個大語言模型，可能就需要重新調整一遍工具的參數與呼叫細節。
+而 **MCP (Model Context Protocol) 最大的好處在於「解耦（Decoupling）」與「標準化」**：
+這週我們是開發一個功能獨立的「伺服器（Server）」，將工具、資源、和 Prompt 全部封裝。任何支援 MCP 協定的客戶端（包含我們寫的 Agent、官方 Inspector、甚至是 Claude Desktop 等）都能直接連線並無縫取用我們的天氣與冷知識工具。這種 Client-Server 架構大幅提升了工具的共用性、跨平台能力與擴充性！
