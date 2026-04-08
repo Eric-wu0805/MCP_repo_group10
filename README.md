@@ -1,7 +1,7 @@
 # MCP Server + AI agent 分組實作
 
 > 課程：AI Agent 開發 — MCP（Model Context Protocol）
-> 主題：（填入你們選的主題）
+> 主題：旅遊顧問 MCP Server
 
 ---
 
