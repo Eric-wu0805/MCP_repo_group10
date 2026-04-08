@@ -95,6 +95,7 @@ python agent.py
 def get_weather(city: str) -> str:
     """查詢目的地天氣"""
     return get_weather_data(city)
+```
 
 ### `tool_name`（負責：姓名）
 
