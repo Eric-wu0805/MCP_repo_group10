@@ -12,6 +12,9 @@ from mcp.server.fastmcp import FastMCP
 from tools.weather import get_weather_data
 from tools.fun_fact import get_fun_fact_data
 from tools.advice import get_advice_data
+from tools.activity import get_activity_data
+from tools.search import web_search_data
+from tools.food import get_food_data
 
 mcp = FastMCP("旅遊顧問 Server")
 
@@ -33,6 +36,21 @@ def get_fun_fact() -> str:
 def get_advice() -> str:
     """旅行前的人生建議"""
     return get_advice_data()
+
+@mcp.tool()
+def get_activity(city: str = None) -> str:
+    """推薦目的地的旅遊活動"""
+    return get_activity_data(city)
+
+@mcp.tool()
+def web_search(query: str) -> str:
+    """搜尋景點、美食或旅遊相關資訊"""
+    return web_search_data(query)
+
+@mcp.tool()
+def get_food(city: str = None) -> str:
+    """推薦目的地的在地美食"""
+    return get_food_data(city)
 
 # ════════════════════════════════
 #  Resource
@@ -66,6 +84,7 @@ def plan_trip(city: str) -> str:
         f"2. 給我一則旅遊相關的冷知識或趣味資訊\n"
         f"3. 給我一則旅行前的人生建議\n"
         f"4. 推薦 2-3 個在 {city} 可以做的活動\n"
+        f"5. 推薦 3-5 個 {city} 的必吃在地美食\n"
         f"請用繁體中文，語氣活潑。"
     )
 
