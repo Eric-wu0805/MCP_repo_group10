@@ -9,15 +9,14 @@
 
 > 說明這個 MCP Server 提供哪些 Tool
 
-## 組員與分工
+## Server 功能總覽
 
-| 姓名   | 負責功能                 | 檔案                  | 使用的 API |
-| ------ | ------------------------ | --------------------- | ------------------- |
-| 吳宸宇 | 天氣工具 (Tool)          | `tools/weather.py`  | `https://wttr.in/{city}?format=j1` |
-| 林富閎 | 冷知識工具 (Tool)        | `tools/fun_fact.py` | `https://uselessfacts.jsph.pl/api/v2/facts/random` |
-| 張承新 | 建議工具 (Tool)          | `tools/advice.py`   | `https://api.adviceslip.com/advice` |
-| 全組   | 共同維護 Resource + Prompt | `server.py`         | —                  |
-| 全組   | 共同維護 Agent（用 AI 產生） | `agent.py`          | Gemini API          |
+| Tool 名稱      | 功能說明               | 負責組員 |
+| -------------- | ---------------------- | -------- |
+| `get_weather`  | 查詢世界各地的即時天氣 | 吳宸宇   |
+| `get_fun_fact` | 取得隨機趣味冷知識     | 林富閎   |
+| `get_advice`   | 取得旅行前的人生建議   | 張承新   |
+
 
 ---
 
