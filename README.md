@@ -84,6 +84,10 @@ python agent.py
 
 > 貼上 Inspector 的截圖（Tools / Resources / Prompts 三個分頁都要有）
 ---<img width="1918" height="902" alt="image" src="https://github.com/user-attachments/assets/20d80395-6baf-40c5-bc89-9e57015e5722" />
+<img width="1913" height="912" alt="image" src="https://github.com/user-attachments/assets/b23406a5-82d0-4bf0-b85c-304888554786" />
+<img width="1911" height="915" alt="image" src="https://github.com/user-attachments/assets/a8f08e3d-ec5b-43a8-ac9a-47a6361ca33f" />
+
+
 
 ### Agent 對話截圖
 
