@@ -34,20 +34,18 @@
 ---
 
 ## 專案架構
-
 ```
-├── server.py              # MCP Server 主程式
-├── agent.py               # MCP Client + Gemini Agent（用 AI 產生）
-├── tools/
-│   ├── __init__.py
-│   ├── example_tool.py    # 範例（可刪除）
-│   ├── xxx_tool.py        # 組員 A 的 Tool
-│   ├── xxx_tool.py        # 組員 B 的 Tool
-│   └── xxx_tool.py        # 組員 C 的 Tool
-├── requirements.txt
-├── .env.example
-├── .gitignore
-└── README.md
+├── server.py              # MCP Server 主程式（包含 Resource 與 Prompt）
+├── agent.py               # MCP Client + Gemini Agent（用 AI 產生並擴充進階指令）
+├── tools/                 # 各組員負責開發的 Tools 目錄
+│   ├── weather.py         # 天氣查詢工具（吳宸宇負責）
+│   ├── fun_fact.py        # 冷知識獲取工具（林富閎負責）
+│   └── advice.py          # 人生建議工具（張承新負責）
+├── requirements.txt       # 專案依賴套件表
+├── .env                   # 實際讀取金鑰的環境變數檔（不該推上 GitHub）
+├── .env.example           # 環境變數範例檔
+├── .gitignore             # Git 忽略檔案設定
+└── README.md              # 專案說明文件
 ```
 
 ---
