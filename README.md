@@ -98,21 +98,33 @@ def get_weather(city: str) -> str:
     return get_weather_data(city)
 ```
 
-### `tool_name`（負責：姓名）
+### `get_fun_fact`（負責：林富閎）
+- **功能**：隨機取得一個冷知識或趣味小百科。
+- **使用 API**：`https://uselessfacts.jsph.pl/api/v2/facts/random`
+- **參數**：無
+- **回傳範例**：`"趣味冷知識：The shortest commercial flight is in Scotland..."`
 
-- **功能**：
-- **使用 API**：
-- **參數**：
-- **回傳範例**：
+```python
+@mcp.tool()
+def get_fun_fact() -> str:
+    """旅途趣味冷知識"""
+    return get_fun_fact_data()
+```
 
-### `tool_name`（負責：姓名）
+### `get_advice`（負責：張承新）
+- **功能**：取得隨機的勵志語錄或人生建議。
+- **使用 API**：`https://api.adviceslip.com/advice`
+- **參數**：無
+- **回傳範例**：`"人生建議：Don't be afraid to ask questions."`
 
-- **功能**：
-- **使用 API**：
-- **參數**：
-- **回傳範例**：
+```python
+@mcp.tool()
+def get_advice() -> str:
+    """旅行前的人生建議"""
+    return get_advice_data()
+```
 
----
+
 
 ## 心得
 
