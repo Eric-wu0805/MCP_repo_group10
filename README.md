@@ -9,23 +9,28 @@
 
 > 說明這個 MCP Server 提供哪些 Tool
 
-| Tool 名稱                 | 功能說明     | 負責組員 |
-| ------------------------- | ------------ | -------- |
-| （範例：`get_weather`） | 查詢即時天氣 |          |
-|                           |              |          |
-|                           |              |          |
+## 組員與分工
+
+| 姓名   | 負責功能                 | 檔案                  | 使用的 API |
+| ------ | ------------------------ | --------------------- | ------------------- |
+| 吳宸宇 | 天氣工具 (Tool)          | `tools/weather.py`  | `https://wttr.in/{city}?format=j1` |
+| 林富閎 | 冷知識工具 (Tool)        | `tools/fun_fact.py` | `https://uselessfacts.jsph.pl/api/v2/facts/random` |
+| 張承新 | 建議工具 (Tool)          | `tools/advice.py`   | `https://api.adviceslip.com/advice` |
+| 全組   | 共同維護 Resource + Prompt | `server.py`         | —                  |
+| 全組   | 共同維護 Agent（用 AI 產生） | `agent.py`          | Gemini API          |
 
 ---
 
 ## 組員與分工
 
-| 姓名 | 負責功能            | 檔案          | 使用的 API |
-| ---- | ------------------- | ------------- | ---------- |
-|      |                     | `tools/`    |            |
-|      |                     | `tools/`    |            |
-|      |                     | `tools/`    |            |
-|      | Resource + Prompt   | `server.py` | —         |
-|      | Agent（用 AI 產生） | `agent.py`  | Gemini API |
+| 姓名   | 負責功能                 | 檔案                  | 使用的 API |
+| ------ | ------------------------ | --------------------- | ------------------- |
+| 吳宸宇 | 天氣工具 (Tool)          | `tools/weather.py`  | `https://wttr.in/{city}?format=j1` |
+| 林富閎 | 冷知識工具 (Tool)        | `tools/fun_fact.py` | `https://uselessfacts.jsph.pl/api/v2/facts/random` |
+| 張承新 | 建議工具 (Tool)          | `tools/advice.py`   | `https://api.adviceslip.com/advice` |
+| 全組   | 共同維護 Resource + Prompt | `server.py`         | —                  |
+| 全組   | 共同維護 Agent（用 AI 產生） | `agent.py`          | Gemini API          |
+
 
 ---
 
