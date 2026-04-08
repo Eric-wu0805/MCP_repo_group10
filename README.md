@@ -83,13 +83,15 @@ python agent.py
 ### MCP Inspector 截圖
 
 > 貼上 Inspector 的截圖（Tools / Resources / Prompts 三個分頁都要有）
-<img width="1918" height="902" alt="image" src="https://github.com/user-attachments/assets/20d80395-6baf-40c5-bc89-9e57015e5722" />
+---<img width="1918" height="902" alt="image" src="https://github.com/user-attachments/assets/20d80395-6baf-40c5-bc89-9e57015e5722" />
 
 ### Agent 對話截圖
 
 > 貼上 Agent 對話的截圖（顯示 Gemini 呼叫 Tool 的過程，以及使用 /use 呼叫 Prompt 的結果）
 
 ---<img width="942" height="858" alt="image" src="https://github.com/user-attachments/assets/4cafbde2-7aef-4a51-ad3e-cf9f30ea23e1" />
+---<img width="931" height="792" alt="image" src="https://github.com/user-attachments/assets/176de8c3-44f1-412e-844d-b04be3c7054e" />
+---<img width="917" height="682" alt="image" src="https://github.com/user-attachments/assets/650c588e-cd58-4053-8a15-99a8b8ff77b5" />
 
 
 ## 各 Tool 說明
