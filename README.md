@@ -24,6 +24,8 @@
 | ------ | ------------------------ | --------------------- | ------------------- |
 | 吳宸宇 | 天氣工具 (Tool)          | `tools/weather.py`  | `https://wttr.in/{city}?format=j1` |
 | 林富閎 | 冷知識工具 (Tool)        | `tools/fun_fact.py` | `https://uselessfacts.jsph.pl/api/v2/facts/random` |
+| 林富閎 | 推薦活動 (Tool)        | `tools/actuvuty.py` | `https://bored-api.appbrewery.com/random` |
+| 林富閎 | 搜尋景點、美食 (Tool)        | `tools/search.py` 、`tools/food.py` | `duckduckgo-search` |
 | 張承新 | 建議工具 (Tool)          | `tools/advice.py`   | `https://api.adviceslip.com/advice` |
 | 全組   | 共同維護 Resource + Prompt | `server.py`         | —                  |
 | 全組   | 共同維護 Agent（用 AI 產生） | `agent.py`          | Gemini API          |
