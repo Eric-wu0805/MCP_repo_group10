@@ -1,0 +1,10 @@
+.env
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+node_modules/
+dist/
+test_search_output.txt
+C:/Users/User/.gemini/antigravity/brain/30686b18-8a30-420b-9405-21e302c63275/task.md
+C:/Users/User/.gemini/antigravity/brain/30686b18-8a30-420b-9405-21e302c63275/implementation_plan.md
+C:/Users/User/.gemini/antigravity/brain/30686b18-8a30-420b-9405-21e302c63275/walkthrough.md
